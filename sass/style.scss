@@ -25,10 +25,12 @@ body{
 
 a {
     text-decoration: none;
+    cursor:pointer;
 }
 
 h1{
     font-size: 25px!important;
+    font-family: 'Raleway';
 }
 
 .container{
@@ -37,6 +39,7 @@ h1{
     padding-top: 20px!important;
     padding-bottom:0!important;
 }
+
 
 //HEADER ---------------------------------------------------
 .header{
@@ -52,13 +55,13 @@ h1{
     width:50%;
     display:flex;
     justify-content: space-between;
-
 }
 
 .header-nav a{
     font-size: 13px;
     padding:4px;
 }
+
 
 //UPPER SECTION --------------------------------------------
 .ct-action{
@@ -73,30 +76,42 @@ h1{
     height: 40px!important;
     width: 100%!important;
     max-width: 90%;
-    margin-bottom: 14px;
+}
+
+.ct-action-input-text::placeholder{
+    padding: 20px;
+    color: var(--Light-Gray);
 }
 
 .ct-action-input-button{
     height: 40px;
     width: 100%;
-    max-width: 96%;
+    max-width: 90%;
     font-weight: 700;
     box-shadow: 2px 2px 3px 1px var(--Light-Gray);
 }
 
-input[type=button]{
+input[type=submit]{
     font-weight: bold;
     font-family: 'Raleway';
     font-size: 13px;
 }
 
+.invalid-feedback{
+    height: 100%;
+    width: 100%!important;
+    max-width: 90%!important;
+    margin: 0 auto!important;
+}
+
+.invalid-feedback p{
+    text-align: left;
+}
 
 
 //LOWER SECTION -------------------------------------------
-
 .about{
     margin-top: 90px;
-    //margin-bottom: ;
     font-size: 15px;
     font-weight: lighter;
     color:var(--Very-Dark-Blue);
@@ -105,6 +120,7 @@ input[type=button]{
 .about-title{
     font-size: 16px!important;
     margin-bottom: 28px;
+    font-family: 'Raleway';
 }
 
 .about-link{
@@ -139,9 +155,7 @@ input[type=button]{
     font-size: 10px;
     line-height: 1.8em;
     font-weight: bold;
-    
 }
-
 
 .about-quote-profile-img{
     height: 24px;
@@ -161,6 +175,7 @@ input[type=button]{
     font-size: 8px;
 }
 
+
 //EARLY ACCESS --------------------------------------------
 .early-access{
     background-color: var(--Desaturated-Blue);
@@ -169,8 +184,7 @@ input[type=button]{
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     overflow: hidden;
-    padding: 58px 44px;
-    padding-bottom: 70px;
+    padding: 58px 44px 70px 44px;
 }
 
 .early-access:before {
@@ -204,7 +218,7 @@ input[type=button]{
     font-size: 12px;
 }
 
-.early-access input[type=button]{
+.early-access input[type=submit]{
     height: 34px;
     width: 90%;
     margin:0!important;
@@ -212,16 +226,25 @@ input[type=button]{
     font-size: 10px;
 }
 
+.early-access input[type=text]::placeholder{
+    padding-left: 20px;
+    color: var(--Light-Gray);
+}
+
+.early-access .invalid-feedback p{
+    margin-bottom:0;
+    padding-bottom:0;
+    color: var(--Light-Grayish-Blue);
+}
+
 
 //FOOTER ---------------------------------------------------
-
 .footer{
     background-color: var(--Very-Dark-Blue);
     color: var(--Light-Grayish-Blue);
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     overflow: hidden;
-
     padding: 30px;
     margin-bottom:0;
 }
@@ -242,7 +265,6 @@ input[type=button]{
 .footer-logo{
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
 .footer-img{
@@ -261,14 +283,238 @@ input[type=button]{
 }
 
 
+//MEDIA QUERYS -------------------------------------------------
+
+//min-width: 992px ---------------------------------------------
+@media(min-width: 992px){
+    body{
+        font-size:17px;
+    }
+
+    h1{
+        font-size: 40px!important;
+    }
+
+    .container{
+        max-width: 1440px;
+        padding: 20px!important;
+        padding-top: 0px!important;
+        padding-bottom:0!important;
+    }
+
+    //HEADER ---------------------------------------------------
+    .header{
+        margin: 60px 0;
+    }
+
+    .header-logo img{
+        height: 100%;
+    }
+
+    .header-nav{
+        margin-left:0px;
+        width:unset;
+    }
+
+    .header-nav a{
+        margin: 0 30px
+    }
+
+    .header-nav a{
+        font-size: 17px;
+        padding:4px;
+    }
+
+    .dir-lg-reverse{
+        display: flex !important;
+        flex-flow: wrap;
+        flex-direction: row-reverse;
+    }
 
 
+    //UPPER SECTION ---------------------------------------------
+    .ct-action{
+        margin-bottom: 440px;
+    }
+
+    .ct-action h1{
+        text-align: start;
+    }
+
+    .ct-action p{
+        margin-bottom: 10px;
+        font-size: 20px;
+        text-align: start;
+    }
+
+    .ct-action form{
+        text-align: start;
+        display:flex;
+    
+    .ct-action-aux{
+        width: 100%;
+        max-width: 54%;
+        margin-bottom: 0px!important;
+        margin-right: 20px;
+    }
+
+    }
+    .ct-action-input-text{
+        height: 44px!important;
+        width: 100%!important;
+        max-width: 100%!important;
+        margin:0px;
+    }
+
+    .ct-action-input-button{
+        height: 44px;
+        width: 100%;
+        max-width: 32%;
+        font-weight: 700;
+        box-shadow: 2px 2px 3px 1px var(--Light-Gray);
+    }
+
+    .invalid-feedback p{
+        font-size: 14px;
+        text-align: left;
+        margin-left: calc(0% - 5%);
+    }
+
+
+    //LOWER SECTION -------------------------------------------
+
+    .about{
+        margin:0;
+        font-size: 17px;
+        font-family: 'Raleway';
+        font-weight: bold;
+        padding-right: 10px;
+    }
+
+    .about-img{
+        margin-left: -20px!important;
+    }
+
+    .about-title{
+        font-size: 40px!important;
+        margin-bottom: 28px;
+    }
+
+    .about-p-margin{
+        margin-right: 150px
+    }
+
+
+    .about-link{
+        margin:0;
+    }
+
+    .about-link a{
+        font-size: 17px;
+    }
+
+
+    .about-quote{
+        width: 100%;
+        max-width: 50%;
+        margin: 40px 0px 104px 0px;
+        padding: 24px 28px 20px 30px;
+    }
+
+    .about-quote-text{
+        font-size: 14px;
+    } 
+
+
+    .about-quote-profile-img{
+        height: 30px;
+        margin-right: 8px;
+    }
+
+    .about-quote-profile-title{
+        font-size: 11px;
+        font-family: 'Raleway';
+        letter-spacing: 0.5px;
+    }
+    
+    
+    //EARLY ACCESS --------------------------------------------
+    .early-access{
+        padding: 100px 0 60px 60px;
+    }
+
+    .row-correction{
+        max-width: 1300px;
+        margin:auto;
+    }
+
+    .early-access-title{
+        color: white!important;
+        font-weight: bold;
+        font-size: 30px;
+        font-family: 'Raleway';
+    }
+
+    .early-access-text{
+        padding-right: 90px!important;
+        font-size: 17px;
+    }
+
+    .early-access-form{
+        padding: 10px 0px 10px 110px!important;
+    }
+
+    .early-access input[type=text]{
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    .early-access input[type=text]::placeholder{
+        padding-left: 20px;
+        color: var(--Light-Gray);
+    }
+
+    .early-access input[type=submit]{
+        height: 44px;
+        width: unset;
+        margin:6px 0 0 0!important;
+        padding: 2px 30px!important;
+        font-size: 14px;
+    }
+
+    .early-access .invalid-feedback p{
+        margin-left: calc(0% - 5%);
+    }
+    
+
+//FOOTER ---------------------------------------------------
+    .footer{
+        padding: 100px 60px;
+    }
+
+    .footer-row-correction{
+        max-width: 1300px!important;
+        margin:auto!important;
+    }
+
+    .footer-aux{
+        max-width: 1300px!important;
+        margin:auto!important;
+    }
+
+    .footer-logo{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+
+// min-width:1200px ---------------------------------------------
 @media(min-width:1200px){
     
     .footer-logo{
         margin-top: 30px;
         margin-bottom: 30px;
-
     }
 }
 

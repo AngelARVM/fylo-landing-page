@@ -34,9 +34,9 @@
 
             <!--Nav-->
             <nav class="header-nav nav">
-                <li class="nav-item"><a class="nav-link active text-dark" href="">Features</a></li>
-                <li class="nav-item"><a class="nav-link active text-dark" href="">Terms</a></li>
-                <li class="nav-item"><a class="nav-link active text-dark" href="">Sign In</a></li>
+                <a class="nav-link active text-dark" >Features</a>
+                <a class="nav-link active text-dark" >Team</a>
+                <a class="nav-link active text-dark" >Sign In</a>
             </nav>
         </div>
 
@@ -44,7 +44,7 @@
         <main class="main">
 
             <!--Upper section-->
-            <div class="row">
+            <div class="row dir-lg-reverse">
 
                 <!--Left upper section-->
                 <div class="col-12 col-lg-6">
@@ -58,21 +58,26 @@
                         <p class="px-2 py-4 ">
                             Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
                         </p>
-                        <form action="">
-                            <input class="ct-action-input-text" type="text" name="Email" placeholder="Enter your email..." id="">
+                        <form class="needs-validation" novalidate>
+                            <div class="ct-action-aux">
+                                <input class="ct-action-input-text" type="text" name="Email" placeholder="Enter your email..." id="validationCustom01" required>
+                                <div class="invalid-feedback text-danger">
+                                    <p>Please check your email</p>
+                                </div>
+                            </div>
                             <br/>
-                            <input class="ct-action-input-button btn btn-primary" type="button" value="Get Started">
+                            <input class="ct-action-input-button btn btn-primary" type="submit" value="Get Started">
                         </form>
                     </article>
                 </div>
             </div>
 
             <!--lower section-->
-            <div class="row">
+            <div class="row dir-lg-reverse">
                 
                 <!--Left lower section-->
                 <div class="col-12 col-lg-5">
-                    <img class="img-fluid" src="./images/illustration-2.svg" alt="img-2">
+                    <img class="about-img img-fluid" src="./images/illustration-2.svg" alt="img-2">
                 </div>
 
                 <!--Right lower section-->
@@ -80,18 +85,16 @@
 
                     <!--Marketing text-->
                     <article class="about">
-                        <h6 class="about-title fw-bold text-center">Stay productive, wherever you are</h2>
-                        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your files storage needs.</p>
-                        <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
-                        <p class="about-link text-center"><a class="link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a></p>
+                        <h6 class="about-title fw-bold text-center text-lg-start">Stay productive, wherever you are</h6>
+                        <p class="about-p-margin">Never let location be an issue when accessing your files. Fylo has you covered for all of your files storage needs.</p>
+                        <p class="about-p-margin">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required!</p>
+                        <p class="about-link text-center text-lg-start"><a class="link">See how Fylo works <img src="./images/icon-arrow.svg" alt=""></a></p>
                     
                         <!--Quote-->
                         <div class="about-quote card shadow">
-                            
-                            
-                                <img class="about-quote-img" src="./images/icon-quotes.svg" alt="quotes">
-                            
-                            <p  class="about-quote-text">Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
+                            <img class="about-quote-img" src="./images/icon-quotes.svg" alt="quotes">
+                            <p  class="about-quote-text">
+                                Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
                             </p>
                             <div class="about-quote-profile d-flex">
                                 <img class="about-quote-profile-img rounded-circle" src="./images/avatar-testimonial.jpg"  alt="profile">
@@ -103,27 +106,28 @@
                         </div>
                     </article>   
                 </div>
-
-                
             </div>
         </main>
         
         <!--Early Access-->
         <div class="early-access px-lg-5">
-            <div class="row">
+            <div class="row row-correction m-lg-auto">
                 
                 <!--Legend-->
                 <div class="col-12 col-lg-6">
-                    <p class="early-access-title text-center">Get early access today</p>
-                    <p class="early-access-text text-center">It only takes a minute to sign up and our free started tier is extremelly generous. If you have any questions, our support team would be happy to help you.</h4>
+                    <p class="early-access-title text-center text-lg-start">Get early access today</p>
+                    <p class="early-access-text text-center text-lg-start">It only takes a minute to sign up and our free started tier is extremelly generous. If you have any questions, our support team would be happy to help you.<p>
                 </div>
 
                 <!--Get started-->
                 <div class="col-12 col-lg-6">
-                    <form class="text-center" action="">
-                        <input class="early-access-input-text" type="text" placeholder="email@example.com" class="" name="" id="">
+                    <form class="early-access-form needs-validation text-center text-lg-start" novalidate>
+                        <input class="early-access-input-text " type="text" placeholder="email@example.com" name="Email" id="validationCustom02" required>
+                        <div class="invalid-feedback text-danger">
+                            <p class="">Please check your email</p>
+                        </div>
                         <br>
-                        <input class="early-access-input-button btn btn-primary m-1" type="button" value="Get Started For Free">
+                        <input class="early-access-input-button btn btn-primary m-1" type="submit" value="Get Started For Free">
                     </form>
                 </div>
             </div>
@@ -132,8 +136,10 @@
         <!--Footer-->
         <div class="footer-wrapper">
             <footer class="footer px-lg-5 ">
-                <img src="./images/logo-white.svg" class="footer-logo mx-3" alt="footer-logo">
-                <div class="row">
+                <div class="footer-aux">
+                    <img class="footer-logo mx-3" src="./images/logo-white.svg"  alt="footer-logo">
+                </div>
+                <div class="row footer-row-correction">
 
                     <!--Contact methods-->
                     <div class="col-12 col-lg-3">
@@ -156,31 +162,34 @@
                     <!--Pages-->
                     <div class="col-12 col-lg-3">
                         <nav class="nav flex-column my-3 my-lg-0">
-                            <a href="" class="nav-link">About Us</a>
-                            <a href="" class="nav-link">Jobs</a>
-                            <a href="" class="nav-link">Press</a>
-                            <a href="" class="nav-link">Blog</a>
+                            <a class="nav-link">About Us</a>
+                            <a class="nav-link">Jobs</a>
+                            <a class="nav-link">Press</a>
+                            <a class="nav-link">Blog</a>
                         </nav>
                     </div>
 
                     <!--Contact & Legal-->
                     <div class="col-12 col-lg-3 ">
                         <nav class="nav flex-column my-3 my-lg-0">
-                            <a href="" class="nav-link">Contact</a>
-                            <a href="" class="nav-link">Terms</a>
-                            <a href="" class="nav-link">Privacy</a>
+                            <a class="nav-link">Contact</a>
+                            <a class="nav-link">Terms</a>
+                            <a class="nav-link">Privacy</a>
                         </nav>
                     </div>
 
                     <!--Social links-->
                     <div class="col-12 col-lg-3 media-icons text-center my-4">
-                        <a href=""><i class="fab fa-facebook-f border border-1 border-white rounded-circle"></i></a>
-                        <a href=""><i class="fab fa-twitter border border-1 border-white rounded-circle"></i></a>
-                        <a href=""><i class="fab fa-instagram border border-1 border-white rounded-circle"></i></a>
+                        <a ><i class="fab fa-facebook-f border border-1 border-white rounded-circle"></i></a>
+                        <a ><i class="fab fa-twitter border border-1 border-white rounded-circle"></i></a>
+                        <a ><i class="fab fa-instagram border border-1 border-white rounded-circle"></i></a>
                     </div>
                 </div>
             </footer>
         </div>
     </div>
+
+    <!--JS validation script-->
+    <script src="js/main.js"></script>
 </body>
 </html>
