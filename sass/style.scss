@@ -16,8 +16,261 @@
 }
 
 body{
-    
     font-family: 'Raleway','Open Sans', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+    font-size:15px!important;
 }
+
+
+a {
+    text-decoration: none;
+}
+
+h1{
+    font-size: 25px!important;
+}
+
+.container{
+    max-width: 100%;
+    padding: 30px!important;
+    padding-top: 20px!important;
+    padding-bottom:0!important;
+}
+
+//HEADER ---------------------------------------------------
+.header{
+    margin-bottom:94px;
+}
+
+.header-logo img{
+    height: 25px;
+}
+
+.header-nav{
+    margin-left:20px;
+    width:50%;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+.header-nav a{
+    font-size: 13px;
+    padding:4px;
+}
+
+//UPPER SECTION --------------------------------------------
+.ct-action{
+    margin-bottom: 150px;
+}
+
+.ct-action p{
+    margin-bottom: 10px;
+}
+
+.ct-action-input-text{
+    height: 40px!important;
+    width: 100%!important;
+    max-width: 90%;
+    margin-bottom: 14px;
+}
+
+.ct-action-input-button{
+    height: 40px;
+    width: 100%;
+    max-width: 96%;
+    font-weight: 700;
+    box-shadow: 2px 2px 3px 1px var(--Light-Gray);
+}
+
+input[type=button]{
+    font-weight: bold;
+    font-family: 'Raleway';
+    font-size: 13px;
+}
+
+
+
+//LOWER SECTION -------------------------------------------
+
+.about{
+    margin-top: 90px;
+    //margin-bottom: ;
+    font-size: 15px;
+    font-weight: lighter;
+    color:var(--Very-Dark-Blue);
+}
+
+.about-title{
+    font-size: 16px!important;
+    margin-bottom: 28px;
+}
+
+.about-link{
+    margin:30px;
+    font-weight: normal;
+}
+
+.about-link a{
+    padding-bottom: 4px;
+    font-size:13px;
+    color: var(--Moderate-Cyan);
+    text-decoration: none;
+    border-bottom : 1px solid var(--Moderate-Cyan);
+}
+
+.about-quote{
+    margin:20px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 20px 24px 20px 26px;
+    font-family: 'Open sans';
+
+}
+
+.about-quote-img{
+    height: 12px;
+    width: 12px;
+    margin-bottom: 8px;
+}
+
+.about-quote-text{
+    font-size: 10px;
+    line-height: 1.8em;
+    font-weight: bold;
+    
+}
+
+
+.about-quote-profile-img{
+    height: 24px;
+    margin-right: 8px;
+}
+
+.about-quote-profile-text p{
+    margin:0;
+}
+
+.about-quote-profile-title{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.about-quote-profile-carrer{
+    font-size: 8px;
+}
+
+//EARLY ACCESS --------------------------------------------
+.early-access{
+    background-color: var(--Desaturated-Blue);
+    font-family: 'Open Sans';
+    color: var(--Light-Gray);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+    padding: 58px 44px;
+    padding-bottom: 70px;
+}
+
+.early-access:before {
+    display: table;
+    content: " ";
+    overflow: hidden;
+}
+
+.early-access:after {
+    display: table;
+    content: " ";
+    overflow: hidden;
+    clear: both;
+}
+
+.early-access-title{
+    color: white!important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.early-access-text{
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.early-access input[type=text]{
+    height: 34px;
+    width: 90%;
+    margin-bottom: 6px;
+    font-size: 12px;
+}
+
+.early-access input[type=button]{
+    height: 34px;
+    width: 90%;
+    margin:0!important;
+    padding: 2px!important;
+    font-size: 10px;
+}
+
+
+//FOOTER ---------------------------------------------------
+
+.footer{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Grayish-Blue);
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    overflow: hidden;
+
+    padding: 30px;
+    margin-bottom:0;
+}
+
+.footer:before {
+    display: table;
+    content: " ";
+    overflow: hidden;
+}
+
+.footer:after {
+    display: table;
+    content: " ";
+    overflow: hidden;
+    clear: both;
+}
+
+.footer-logo{
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.footer-img{
+    margin-right: 14px;
+}
+
+.footer a{
+    color: var(--Light-Grayish-Blue)
+}
+
+.footer i{
+    text-align: center;
+    padding-top: 3px;
+    width: 26px;
+    height: 26px;
+}
+
+
+
+
+@media(min-width:1200px){
+    
+    .footer-logo{
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+    }
+}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
